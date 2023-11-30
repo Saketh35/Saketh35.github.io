@@ -1,248 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saketh Reddy</title>
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      rel="stylesheet"
+    />
     <style>
+      /* Global Styles */
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main Content Styles */
       main {
-            opacity: 0;
-            animation: fadeIn 1.5s ease-out forwards;
-        }
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 0 30px;
+        text-align: center;
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        /* Fade-in effect for the main content */
+        opacity: 0;
+        animation: fadeIn 1.5s ease-out forwards;
+      }
 
-        /* Hover effect for social icons */
-        .icons-social a {
-            transition: color 0.3s ease, transform 0.3s ease;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-        .icons-social a:hover {
-            color: #007bff;
-            transform: translateY(-3px);
-        }
-        /* Bounce effect for the intro text */
-        main > .intro {
-            animation: bounce 1s infinite;
-        }
+      /* Intro Text Styles with Bounce Effect */
+      main > .intro {
+        font-family: "Reem Kufi", sans-serif;
+        font-size: 3.75em;
+        font-weight: 600;
+        animation: bounce 1s infinite;
+        color: #333;
+      }
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
         }
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
+        40% {
+          transform: translateY(-10px);
         }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
 
-        main {
-            text-align: center;
-            padding: 50px;
-          
-        }
+      /* Tagline Styles */
+      main > .tagline {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        font-weight: 100;
+        color: #666;
+      }
 
-        .intro {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
+      /* Social Icons Styles with Hover Effect */
+      .icons-social a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #555;
+        text-decoration: none;
+        font-size: 24px;
+        transition:
+          color 0.3s ease,
+          transform 0.3s ease;
+      }
 
-        .tagline {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
+      .icons-social a:hover {
+        color: #007bff;
+        transform: translateY(-3px);
+      }
 
-        .icons-social a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #555;
-            text-decoration: none;
-            font-size: 24px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+      /* Section Specific Styles */
+      .icons-social i {
+        padding: 10px;
+        font-size: 3em;
+      }
 
-        .icons-social a:hover {
-            color: #007bff;
-            transform: rotateY(360deg);
-        }
+      /* Media Queries for Responsive Font Size */
+      html {
+        box-sizing: border-box;
+        font-size: 12px;
+      }
 
+      @media (min-width: 576px) {
         html {
-            box-sizing: border-box;
-            font-size: 12px;
+          font-size: 14px;
         }
+      }
 
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        ol,
-        ul {
-            margin: 0;
-            padding: 0;
-            font-weight: normal;
-        }
-
-        ol,
-        ul {
-            list-style: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
+      @media (min-width: 768px) {
         html {
-            font-family: 'Roboto', sans-serif;
+          font-size: 16px;
         }
+      }
 
-        @media (min-width: 576px) {
-            html {
-                font-size: 14px;
-            }
+      @media (min-width: 992px) {
+        html {
+          font-size: 18px;
         }
+      }
 
-        @media (min-width: 768px) {
-            html {
-                font-size: 16px;
-            }
+      @media (min-width: 1200px) {
+        html {
+          font-size: 20px;
         }
+      }
 
-        @media (min-width: 992px) {
-            html {
-                font-size: 18px;
-            }
-        }
+      /* External Link Styles */
+      .icons-social a {
+        text-decoration: none;
+        color: #1e1e1e;
+      }
 
-        @media (min-width: 1200px) {
-            html {
-                font-size: 20px;
-            }
-        }
+      .icons-social a svg path {
+        fill: #1e1e1e;
+      }
+      .icons-social a:hover {
+        color: #007bff;
+        transform: rotateY(360deg);
+      }
 
-        .icons-social i {
-            font-size: 3em;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: center;
-            padding: 0 30px;
-            text-align: center;
-        }
-
-        main>.intro {
-            font-family: 'Reem Kufi', sans-serif;
-            font-size: 3.75em;
-            font-weight: 600;
-        }
-
-        main>.tagline {
-            font-size: 1.5rem;
-            margin: 1.5rem 0;
-            font-weight: 100;
-        }
-
-        .icons-social i {
-            padding: 10px;
-        }
-
-        .icons-social a {
-            text-decoration: none;
-        }
-
-        .devto {
-            margin-bottom: -0.20rem;
-        }
-
-        .devto svg {
-            margin-bottom: -0.20rem;
-            margin-left: 0.675rem;
-            ;
-            width: 2.65rem;
-            height: 2.65rem;
-        }
-
-        main {
-            background: #FFEB3B;
-            color: #1E1E1E;
-        }
-
-        .icons-social a {
-            color: #1E1E1E;
-        }
-
-        .icons-social a svg path {
-            fill: #1E1E1E;
-        }
-      
-      
+      /* Background and Text Color for Main Section */
+      main {
+        background: #ffeb3b;
+        color: #1e1e1e;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="intro">Hello, I'm Saketh!</div>
-        <div class="tagline">Data Science | Machine Learning | Python | Power BI</div>
-        <div class="icons-social">
-            <a target="_blank" href="https://github.com/Saketh35" title="Github">
-                <i class="fab fa-github"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/sakethreddy35/" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://www.freecodecamp.org/saketh35" title="FreeCodeCamp">
-                <i class="fab fa-free-code-camp"></i>
-            </a>
-            <a target="_blank" href="https://codepen.io/Saketh-the-lessful" title="CodePen">
-                <i class="fab fa-codepen"></i>
-            </a>
-        </div>
+      <div class="intro">Hello, I'm Saketh!</div>
+      <div class="tagline">
+        Data Science | Machine Learning | Python | Power BI
+      </div>
+      <div class="icons-social">
+        <!-- GitHub -->
+        <a target="_blank" href="https://github.com/Saketh35" title="Github">
+          <i class="fab fa-github"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/sakethreddy35/"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- FreeCodeCamp -->
+        <a
+          target="_blank"
+          href="https://www.freecodecamp.org/saketh35"
+          title="FreeCodeCamp"
+        >
+          <i class="fab fa-free-code-camp"></i>
+        </a>
+        <!-- CodePen -->
+        <a
+          target="_blank"
+          href="https://codepen.io/Saketh-the-lessful"
+          title="CodePen"
+        >
+          <i class="fab fa-codepen"></i>
+        </a>
+      </div>
     </main>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            init();
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        init();
+      });
 
-        function init() {
-            console.log('Page loaded, initializing...');
-        }
+      function init() {
+        console.log("Page loaded, initializing...");
+      }
     </script>
-</body>
-
+  </body>
 </html>
