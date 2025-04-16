@@ -27,7 +27,7 @@ I specialize in:
 Connect with me on various platforms:
 
 - [GitHub](https://github.com/Saketh35)
-- [LinkedIn](https://www.linkedin.com/in/sakethreddy35/)
+- [LinkedIn](https://www.linkedin.com/in/sakethreddybalpunuri)
 - [FreeCodeCamp](https://www.freecodecamp.org/saketh35)
 - [CodePen](https://codepen.io/Saketh-the-lessful)
 
